@@ -105,7 +105,6 @@ def alternate_stories_2():
             "end of the corridor is a room with four doors.\n")
 
     elif save[1] == 2:
-        play_music(9, 0.04)
         print(
             "\n\x1B[3mJude leaves the group and goes through the dark hallway. Eric follows behind Jude. You are "
             "somewhat hesitant to enter the doorway but enter anyway.\n")
@@ -369,7 +368,6 @@ def alternate_stories_7():
 
 def alternate_stories_8():
     if "flint and matches" in items or "shoot" in items:
-        play_sound(6, 0.5)
         print("\nSuddenly, you hear loud screeches coming from the stairs you just entered.\n")
         print(f"\x1B[3m{Style.BRIGHT}**RAhhhh Rahhhhh**\n")
         next()
@@ -401,7 +399,6 @@ def alternate_stories_8():
 
             print("\n\x1B[3mWhile everyone continues to fight, Eric throws the weapon on the ground in a haste.\n")
             next()
-            play_sound(6, 0.5)
 
             print("\n\x1B[3mYou go to the spot where the weapon is and grab on to it tightly.\n")
             next()
