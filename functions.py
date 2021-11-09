@@ -8,13 +8,6 @@ def next():
     if answer == '':
         pass
 
-
-# This will be used for the save function, by appending the player's input of choices to the list.
-save = []
-# This function is used for items in the story. If a player has an item in the dictionary,
-# the items that they have could be useful in the future.
-items = {}
-
 music_list = {1: "assets/Start_Music.mp3", 2: "assets/Odd.mp3"}
 
 
