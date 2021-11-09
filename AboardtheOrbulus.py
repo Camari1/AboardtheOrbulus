@@ -9,6 +9,12 @@ from pygame import mixer
 colorama.init(autoreset=True)
 mixer.init()
 
+# This will be used for the save function, by appending the player's input of choices to the list.
+save = []
+# This function is used for items in the story. If a player has an item in the dictionary,
+# the items that they have could be useful in the future.
+items = {}
+
 
 def main():
     play_music(1, 0.60)
