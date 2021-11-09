@@ -1,7 +1,6 @@
 import pygame
 from pygame import mixer
 
-
 # This function progresses the story.
 def next():
     answer = input("Press \"ENTER\" to continue...")
