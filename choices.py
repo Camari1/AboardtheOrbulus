@@ -22,8 +22,7 @@ def choice8():
 
             print("\n\x1B[3mThe group runs to the left at full speed. Crimson bolts still streak from behind them.\n")
             next()
-            play_sound(8, 0.30)
-
+  
             print(
                 "\nSAM:\n\x1B[3mI have scanned ahead of us and have found that the shopping center is ahead of us. If "
                 "you split up and hid we should be able to lose our pursuer.\n")
@@ -148,7 +147,6 @@ def choice7():
         if int(player_choose7) == 1:
             print("\nCREE:\nEVERYBODY OPEN FIRE!!!!\n")
             next()
-            items["fight"] = 0
 
             print(
                 "\n\x1B[3mAll at once everyone activates their weapons and opens fire on the machine. Red and green "
@@ -174,6 +172,7 @@ def choice7():
 
             print("\nCREE:\nEVERYONE RUN!!!!!!\n")
             next()
+            items["fight"] = 0
 
         elif int(player_choose7) == 2:
             print("\nCREE:\nEVERYONE RUN!!!!!!\n")
