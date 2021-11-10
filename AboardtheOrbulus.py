@@ -5,6 +5,7 @@ from functions import next, items, play_music, play_sound
 from choices import *
 from alternate_storylines import *
 from pygame import mixer
+from art import*
 
 colorama.init(autoreset=True)
 mixer.init()
@@ -19,8 +20,7 @@ items = {}
 def main():
     play_music(1, 0.60)
     print("Rising Shield Studios Presents...\n")
-    print(f"{Fore.RED}Aboard the Orbulus")
-    print(f"{Fore.RED}---------------------------------")
+    print(text2art("Aboard The Orbulus", font="small"))
     next()
 
     print(
@@ -615,6 +615,33 @@ def main():
 
         print("\nERIC:\nWell, we have to try.\n")
         next()
+        
+        print("\n[3mYou make your way to the shopping district with Sam. Your goal is to find anything that will help make the concoction for killing Molgra and destroying the Svis. Sam already has the sample of the Svis.\n")
+        next()
+
+
+        print("\nCREE:\nSam,can you locate any of the potential materials we need?\n")
+        next()
+
+
+        print("\nSAM:\nNow scanning\n")
+        next()
+
+
+        print("\n[3mSam scans the shopping district. Red lights dance across the area as the drone picks up information.\n")
+        next()
+
+        print("\nSam:\nI have identified a hardware store that has multiple weed killers.\n")
+        next()
+        
+        print("\nSam:\nGreat, let's go.\n")
+        next()
+        
+        print("\n3mYou and the drone make it to Loma's. Inside of the shop you find many tools and materials. Sam begins to scan the store in order to single out the location of the weed killers.\n")
+        next()
+        
+        print("\nSAM:\nI have located the weed killers in aisle B13 halfway down the aisle in the middle of the third row.
+        
 
         print("\n\x1B[3mEric walks away from the tram, and goes back to the four doors.")
         next()
