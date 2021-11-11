@@ -17,7 +17,7 @@ def main():
     next()
     
     play_music(2, 0.04, 60.0)
-    
+    lines(dialogue, 0)
     choice()
     next()
 
