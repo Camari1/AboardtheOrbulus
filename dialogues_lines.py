@@ -1,5 +1,6 @@
 import colorama
 from colorama import Style, Fore
+from functions import next
 ITALICS = "\x1B[3m"
 colorama.init(autoreset=True)
 
