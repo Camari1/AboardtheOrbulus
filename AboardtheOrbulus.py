@@ -1,7 +1,7 @@
 import colorama
 import pygame
 from colorama import Fore, Style
-from functions import next, items, play_music, play_sound
+from functions import next, items, play_music, play_sound, save_list, lines
 from choices import *
 from alternate_storylines import *
 from pygame import mixer
@@ -10,93 +10,14 @@ from art import*
 colorama.init(autoreset=True)
 mixer.init()
 
-# This will be used for the save function, by appending the player's input of choices to the list.
-save = []
-# This function is used for items in the story. If a player has an item in the dictionary,
-# the items that they have could be useful in the future.
-items = {}
-
-
 def main():
     play_music(1, 0.60)
     print("Rising Shield Studios Presents...\n")
     print(text2art("Aboard The Orbulus", font="small"))
     next()
-
-    print(
-        "\n\x1B[3mIn the vast emptiness of space, you and your crew are aboard a spaceship, the Starphaser. The "
-        "members of your crew are tasked with delivering triple helix energy rods, and other supplies to the colony "
-        "planet Zeno, which is currently being prepared as another settlement for human life. You are “Cree”, "
-        "the captain of this ship. You are the guidance for this crew, every decision you make determines everything "
-        "- choose wisely…\n")
-    next()
+    
     play_music(2, 0.04, 60.0)
-    print(
-        "\n\x1B[3mFrom the cylindrical access terminal Andromeda’s pink, icosahedronal, holographic form flickered to "
-        "life from the terminal.\n")
-    next()
-
-    print(
-        "\nANDROMEDA:\n\x1B[3m*voice message*\nMessage from: Ambassador Morgans… Greetings, Captain Cree.I would like "
-        "to thank you and your crew for taking up this task, I want you to lead the members on the Starphaser to "
-        "Planet Zeno and deliver the triple helix energy rods. You only need to make sure they are delivered to the "
-        "workers. They will make sure they are installed properly. Good luck out there.\n")
-    next()
-
-    print(
-        "\n\x1B[3mThere are 13-15 people on the ship including 5 Magnus’, 2 Universal Service Droids(USDs), "
-        "6 EEDs(Environmental Explorer Droids), and 3 MARs(Multi-Purpose Analysis Robots). In Section D of the ship ("
-        "Lounge Area). Everyone is chattering amongst each other excited about the space mission.\n")
-    next()
-
-    print(
-        "\nCREE: \nAlright listen, I want everyone to continue training for their positions. This is a critical "
-        "mission. We must expand the locations for humanity. Andromeda, do we have any reading for where Planet Zeno "
-        "may be located?\n")
-    next()
-
-    print(
-        "\nANDROMEDA:\n*robotic*\n" + "\x1B[3mScanning…" + "\nThe newly registered Planet Zeno is located on the "
-                                                           "Ionas system.\n")
-    next()
-
-    print("\nCREE:\nDo you have any reading about the distance from here?\n")
-    next()
-
-    print("\nANDROMEDA:" + "\n\x1B[3mScanning…" + "\nApproximately 1.7 million light-years away…\n")
-    next()
-
-    print(
-        "\nCREE:\nAt the pace we are moving now, it will take us years to locate the planet… ANDROMEDA set the speed "
-        "of the ship to 370 thousand light-years/ month.\n")
-    next()
-
-    print(
-        "\n\x1B[3mThe Starphaser is drifting through space, and suddenly its speed begins to increase. A loud WHOOSH! "
-        "sound cuts through the quietness of space, and the Starphaser DASHES like the speed of light, "
-        "leaving nothing but the essence of transparent comet-like laser trails from behind, slowly dissipating.\n")
-    next()
-
-    print("\nJUDE:\nCaptain Cree, we are-\n")
-    print(
-        "\nANDROMEDA:" + f"\n\x1B[3m*{Style.BRIGHT}BEEP! BEEP! BEEP! BEEP!*" + "\n\x1B[3mDetecting…" + "\nUnknown "
-                                                                                                       "space shuttle"
-                                                                                                       " is located "
-                                                                                                       "670 thousand "
-                                                                                                       "light-years "
-                                                                                                       "away. "
-                                                                                                       "Probability "
-                                                                                                       "of collision: "
-                                                                                                       "69%.\n")
-    next()
-
-    print(
-        "\n\x1B[3mThe Starphaser is set in speed, moving rapidly through space. Located ahead, in close proximity, "
-        "is a pus-like putrid orange, bulbous overgrowth covering every inch of an unknown colony space shuttle; the "
-        "ship looks rusty and dilapidated. The Starphaser becomes increasingly close to the shuttle.\n")
-    print("Should you...")
-    print(f"{Fore.LIGHTRED_EX}1) Stop your shuttle entirely, and wait for the mysterious shuttle to pass by")
-    print(f"{Fore.LIGHTRED_EX}2) Slow down your shuttle, and try to inspect the mysterious shuttle")
+    
     choice()
     next()
 
