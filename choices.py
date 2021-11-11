@@ -1,7 +1,7 @@
 import colorama
+from functions import*
 from colorama import Fore, Style
-from functions import *
-from AboardtheOrbulus import save, items
+from dialogues_lines import dialogue, choices_dialogue, alternate_storylines
 
 colorama.init(autoreset=True)
 
@@ -981,96 +981,10 @@ def choice():
         player_choose1 = input("What will you do?\n*Please type a number, or a number listed above* ")
 
     if player_choose1 == "1":
-        print("\nCREE:\nAndromeda, slow down our shuttle!\n")
-        next()
-
-        print(
-            "\n\x1B[3mThe Starphaser slowly decreases in speed, then abruptly stops. The mysterious space shuttle is "
-            "at a viewing distance. The ship is drifting past the Starphaser in a lifeless motion, unfazed by the "
-            "near-collision. As if there is no one present on the ship.\n")
-        next()
-
-        print("\n\x1B[3mThe ships alarms suddenly go off with an almost deafening blare.\n")
-
-        print(
-            "\nAndromeda:\n" + "\x1B[3mWarning...Detecting space pirates in the immediate area...\nAll personal "
-                               "please follow protocol 137. I repeat, all personal please follow protocol 137.\n")
-        next()
-
-        print("\nJUDE:\nSPACE PIRATES!?\n")
-
-        print(f"\n\x1B[3m{Style.BRIGHT}THUD!, THUD!, THUD!, THUD!\n")
-        print(
-            "\n\x1B[3mLong metal ropes shoot out from a familiar space shuttle and attach to your ship on the right. "
-            "Coming from the ship’s window, you notice a large overshadow approach the ship. The space pirate’s ship "
-            "leans closer to your ship, and human entities emerge from a hatch located on the right side of it. They "
-            "" + f"\x1B[3m{Style.BRIGHT}ZOOM " + "everywhere around your ship, but some " + f"\x1B[3m"
-                                                                                            f"{Style.BRIGHT}ZOOM " +
-            "towards the door entrance next to you.\n")
-        next()
-
-        print(
-            "\nCREE:\nEveryone, training is over! Combatants barricade the door! Make sure nothing gets in! Andromeda "
-            "activate the Magnus robots!\n")
-        next()
-
-        print(
-            "\n\x1B[3mCombatants rush towards their firearms to grab them, then dash towards the entrance way "
-            "determined to protect everyone on the ship. The pirates impatiently and persistently pound at the door "
-            "determined to enter the Starphaser. Meanwhile, the sound of the mechanical guards powering on could be "
-            "heard shortly followed by their loud, clunky footsteps making their way to various points of the ship.\n")
-        next()
-
-
-        print(
-            "\nAndromeda:" + "\n\x1B[3mScanning…" + "\nUnknown Space Shuttle distance increasing. 34,000 miles away, "
-                                                    "34,100 miles away, 34,200 miles away…\n")
-        next()
-
-        print(
-            "\n\x1B[3mSuddenly, the banging stops. The pirates " + f"\x1B[3m{Style.BRIGHT}ZOOM " + "opposite the "
-                                                                                                   "doorway and go "
-                                                                                                   "toward their ship. "
-                                                                                                   "The ship detaches "
-                                                                                                   "itself from the "
-                                                                                                   "Starphaser, "
-                                                                                                   "and the human "
-                                                                                                   "entities enter the "
-                                                                                                   "shuttle. The "
-                                                                                                   "shuttle reverses "
-                                                                                                   "away from the "
-                                                                                                   "Starphaser and "
-                                                                                                   "leaves abruptly…\n")
-        next()
-
-        print("\nERIC:\nIs everyone alright?\n")
-        next()
-
-        print("\n\x1B[3mEveryone calms down from the panic, and the Magnus's return to their charging stations.\n")
-        next()
-
-        print(
-            "\nCREE:\nSpace pirates. The worst thing to run into in space. Andromeda, is that mysterious shuttle "
-            "still here?\n")
-        next()
-
-        print("\nAndromeda:" + "\n\x1B[3m*chirp*" + "\nUnknown shuttle is…\n34,356 miles away.\n")
-        next()
-
-        print(
-            "\nCree:\nOk, the ship is still pretty close. We should try to see if it could have any hints for the new "
-            "planet’s location.\n")
-        save.append(int(player_choose1))
+       lines(choices_dialogue, 15)
+       save_list(player_choose1)
 
     elif player_choose1 == "2":
-        print(
-            "\n\x1B[3mThe Starphaser slowly decreases in speed and drifts closer to the space shuttle. The mysterious "
-            "space shuttle is at a viewing distance. The ship is drifting past the Starphaser in a lifeless motion, "
-            "unfazed by the near-collision. As if there is no one present on the ship. On the side in large white "
-            "letters is the word “ORBULUS”.\n")
-        next()
-        print("\nDARRYL:\nShould we inspect the ship?")
-        print(f"{Fore.LIGHTRED_EX}1) Yes")
-        print(f"{Fore.LIGHTRED_EX}2) No")
-        save.append(int(player_choose1))
+        lines(choices_dialogue, 16)
+        save_list(player_choose1)
         choice2()
