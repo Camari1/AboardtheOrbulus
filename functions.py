@@ -26,4 +26,8 @@ def play_music(number_list, volume, length=0.0):
     pygame.mixer.music.set_volume(volume)
     pygame.mixer.music.play(-1, length)
 
-
+# This is a function that takes a certain list in the dialogues_lines.py file, and executes the dialogue and narration in the list.
+def lines(list_name, story_number_list):
+    for stories in list_name[story_number_list]:
+        print(stories)
+        next()
