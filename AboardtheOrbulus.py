@@ -1,11 +1,13 @@
-import colorama
 import pygame
-from colorama import Fore, Style
-from functions import next, items, play_music, play_sound, save_list, lines
-from choices import *
-from alternate_storylines import *
-from pygame import mixer
+import colorama
 from art import*
+from choices import*
+from pygame import mixer
+from colorama import Fore, Style
+from alternate_storylines import*
+from functions import next, items, play_music, save_list, lines
+from choices import choice, choice4, choice5, choice6, choice7, choice8
+from dialogues_lines import dialogue, choices_dialogue, alternate_storylines
 
 colorama.init(autoreset=True)
 mixer.init()
