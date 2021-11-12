@@ -5,5 +5,5 @@ This is a text-based adventure game where you are able to make choices throughou
 The player will continue to proceed in the story. Once the player encounters a choice
 prompt, the player must input a number based on the choices that are prompted.
 
-# Where to Play the Game?
-This code only runs on PyCharm, because of the "play_music" code.
+# Sound in Game?
+If you want sound to play in the game, you have to run the code on PyCharm.
